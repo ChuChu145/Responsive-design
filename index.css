@@ -1,0 +1,182 @@
+body{
+    
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color: #2b283a;
+  margin: 0;
+
+}
+
+/* Typography */
+
+header h1{
+  margin: 0;
+}
+
+
+h1{
+  font-size: 1.75rem;
+  color: white;
+}
+
+h2{
+  color: #6A040F;
+  font-size: 1.375rem;
+  margin-top: 0;
+}
+
+h3{
+  font-size: 1.25rem;
+}
+
+p{
+  line-height: 1.5;
+}
+
+.subheading{
+  display: block;
+  font-size: 1rem;
+  color: #FFCDB2;
+}
+
+/* Links */
+
+a {
+  color: #ef5839;
+  text-decoration: underline dotted; 
+}
+
+a:hover,
+a:active{
+  color: #d4b44c;
+}
+
+.btn{
+  font-size: 1.125rem;
+  text-align: center;
+  font-weight: 500;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em 1em;
+  margin-bottom: 1em;
+  border-radius: 4.6px;
+}
+
+.btn-dark{
+  color: white;
+  background-color: #c1121f;
+}
+
+.btn-light{
+  color: white;
+  background-color: #F7B267;
+
+}
+
+.btn:hover,
+.btn:active{
+  color: #2b238a;
+  background-color: #f3e885;
+}
+
+/* Layout */
+
+header,section{
+  padding: 1.25em 0;
+}
+
+header{
+  background-color:#c1121f;
+  padding: 2.87em;
+}
+
+.main-image{
+  width: 100%;
+  max-width: 640px;
+  margin: 0 0 2em 0;
+  display: block;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Navigation */
+
+nav a{
+  color: white;
+  text-decoration: none;
+  padding:0.85em 0;
+  font-size: 1.125rem;
+  display: block;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* Media Queries */
+
+@media (max-width: 767px) {
+  header {
+      text-align: center;
+  }
+
+  nav {
+      margin-top: 1.5em;
+  }
+
+  li:not(:last-child) {
+      border-bottom: 1px dotted #a190b6;
+  }  
+}
+
+@media (min-width: 768px) {
+  header,
+  section {
+      padding: 2.875em 0;        
+  }
+  
+  header .container,
+  nav ul {
+      display: flex;
+  }
+  
+  header .container {
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  nav li {
+      margin-left: 1.25em;
+      font-size: 1em;
+      min-width: fit-content;
+  }
+  
+  .btn {
+      display: inline-block;
+      margin-right: 0.5em;
+  }
+  
+  h1 {
+      font-size: 2.25rem;
+  }
+  
+  h2 {
+      font-size: 1.75rem;
+  }
+  
+  .subheading {
+      font-size: 1.25rem;
+  }
+  
+  p {
+      font-size: 1.125rem;
+  }
+}
